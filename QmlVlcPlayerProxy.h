@@ -70,7 +70,7 @@ public:
         Error = ::libvlc_Error,
     };
     Q_ENUMS( State )
-    Q_PROPERTY( State state READ get_state NOTIFY stateChanged )
+    Q_PROPERTY( unsigned state READ get_state NOTIFY stateChanged )
 
     Q_PROPERTY( QString mrl READ get_mrl WRITE set_mrl )
     Q_PROPERTY( double position READ get_position WRITE set_position NOTIFY mediaPlayerPositionChanged )
