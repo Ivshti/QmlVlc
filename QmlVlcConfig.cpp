@@ -141,7 +141,7 @@ libvlc_instance_t* QmlVlcConfig::createLibvlcInstance()
 
     QVector<const char*> opts;
 
-    //opts.push_back( "--http-reconnect" );
+    opts.push_back( "--http-reconnect" );
 
     QByteArray networkCachingBuf;
     if( _networkCacheTime >= 0 ) {
